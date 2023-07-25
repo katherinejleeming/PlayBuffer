@@ -1,6 +1,6 @@
 #define PLAY_IMPLEMENTATION
 #define PLAY_USING_GAMEOBJECT_MANAGER
-#include "Play.h"
+#include "HelloWorld/Play.h"
 
 int DISPLAY_WIDTH = 1280;
 int DISPLAY_HEIGHT = 720;
@@ -297,7 +297,7 @@ void UpdateAgent8()
 			case STATE_APPEAR:
 				obj_agent8.velocity = { 0, 12 };
 				obj_agent8.acceleration = { 0,0.5f };
-				Play::SetSprite(obj_agent8, "agent_fall", 0);
+				Play::SetSprite(obj_agent8, "agent8_fall", 0);
 				obj_agent8.rotation = 0;
 				if (obj_agent8.pos.y >= DISPLAY_HEIGHT / 3)
 					gameState.agentState = STATE_PLAY;
